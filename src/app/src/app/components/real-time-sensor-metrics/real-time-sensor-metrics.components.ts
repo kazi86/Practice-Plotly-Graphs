@@ -1,13 +1,11 @@
 import {Component, ElementRef, ViewChild} from "@angular/core";
 import {FlatPickrOutputOptions} from "angularx-flatpickr/lib/flatpickr.directive";
 import {PlotlyDataLayoutConfig} from "plotly.js-dist-min";
-import {EntityReportModel} from "src/app/models/entity-report.mode";
-import {EntityModel} from "src/app/models/graph-data.model";
-import {EntityObjectModel} from "src/app/models/Inventory-FlowRateData.model";
-import {FlowrateService} from "src/app/services/flowrate.service";
-import {GrahphDataService} from "src/app/services/graph-data.service";
-import {InventoryService} from "src/app/services/inventory.service";
-import {last} from "rxjs";
+import {EntityObjectModel} from "../../../../models/Inventory-FlowRateData.model";
+import {GrahphDataService} from "../../../../services/graph-data.service";
+import {InventoryService} from "../../../../services/inventory.service";
+import {FlowrateService} from "../../../../services/flowrate.service";
+import {EntityModel} from "../../../../models/graph-data.model";
 
 @Component({
   selector: 'real-time-sensor-metrics',

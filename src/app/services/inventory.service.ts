@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { environment } from "src/environment/developement";
 import { EntityReportModel } from "../models/entity-report.mode";
+import {environment} from "../../environment/developement";
 
 @Injectable({
   providedIn:'root'
