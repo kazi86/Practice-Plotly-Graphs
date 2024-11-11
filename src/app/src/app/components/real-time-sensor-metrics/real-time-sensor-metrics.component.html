@@ -1,0 +1,38 @@
+<div class="row mt-4 d-flex justify-content-center">
+
+  <div class="col-4"></div>
+
+  <div class="col-4">
+
+    <div class="input-group mb-3">
+
+      <div class="input-group-prepend">
+
+        <span class="input-group-text" id="basic-addon1">
+
+          <i class="ri-calendar-2-line" (click)="onCalendarOpen()"></i>
+
+        </span>
+
+      </div>
+
+      <input #flatpickrInput class="form-control" mode="range" type="text" mwlFlatpickr
+        (flatpickrChange)="onDateRangePick($event)" [(ngModel)]="selectedDates" [altInput]="true"
+        [convertModelValue]="true" />
+
+    </div>
+
+
+  </div>
+
+  <div class="col-4"></div>
+
+  <div class="col-12">
+
+    <plotly-plot id="real-time-sensor-metrics" *ngIf="dataAvailable" [data]="plotlyOptions.data"
+      [layout]="plotlyOptions.layout" [config]="plotlyOptions.config" [useResizeHandler]="true">
+    </plotly-plot>
+
+  </div>
+
+</div>
