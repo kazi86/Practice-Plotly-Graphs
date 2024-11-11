@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {environment} from "src/environment/developement";
+import {environment} from "../../environment/developement";
 import {HttpClient} from '@angular/common/http';
 import {DateRangeModel} from "../models/date-range.model";
 import {EntityObjectModel, InventoryFlowRateDataModel} from "../models/Inventory-FlowRateData.model";
